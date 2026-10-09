@@ -1,0 +1,4 @@
+{% extends 'base.html' %}
+{% block title %}{{ code }}{% endblock %}{% block content %}
+<section class="error-page"><span class="eyebrow">NORTHSTAR &nbsp; / &nbsp; {{ code }}</span><h1>{{ code }}</h1><p>{{ message }}</p><a class="button button-primary" href="{{ url_for('dashboard') }}">Back to overview <span>→</span></a></section>
+{% endblock %}

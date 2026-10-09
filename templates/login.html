@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block title %}Sign in{% endblock %}
+{% block auth_content %}
+<main class="login-page">
+  <section class="login-art" aria-label="Northstar College campus">
+    <a class="brand light-brand" href="#"><span class="brand-mark">N</span><span>northstar<small>COLLEGE PORTAL</small></span></a>
+    <div class="art-caption"><span class="eyebrow light-eyebrow">A CAMPUS IN MOTION</span><h1>Make room<br>for what’s next.</h1><p>One place for the people, progress, and possibilities that shape your college experience.</p></div>
+    <div class="art-footer"><span>43° 04′ 12.8″ N &nbsp; 89° 24′ 30.1″ W</span><span>EST. 1968</span></div>
+  </section>
+  <section class="login-panel"><div class="login-box"><span class="eyebrow">WELCOME BACK</span><h2>Sign in to<br>your campus.</h2><p class="muted">Use your college account to continue.</p>
+    <form method="post" class="login-form"><input type="hidden" name="csrf_token" value="{{ csrf_token }}"><label for="username">Username</label><input id="username" name="username" autocomplete="username" required autofocus placeholder="e.g. maya.chen"><label for="password">Password</label><input id="password" type="password" name="password" autocomplete="current-password" required placeholder="Enter your password"><button class="button button-primary login-submit" type="submit">Continue <span>→</span></button></form>
+    <div class="login-help"><span class="help-dot"></span><span>Need access? Contact your college administrator.</span></div>
+  </div><div class="login-copyright">NORTHSTAR COLLEGE <span>·</span> SECURE PORTAL</div></section>
+</main>
+{% endblock %}
